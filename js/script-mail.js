@@ -1,6 +1,6 @@
 //dichiarazione variabili
 
-var yourMail = "pincopallino@gmail.com";
+var yourMail = "andreabianchi32@gmail.com";
 //var yourMail = prompt("Qual è la tua mail?");
 console.log(yourMail);
 var mailList = [
@@ -9,7 +9,6 @@ var mailList = [
   "andreabianchi32@gmail.com",
   "ugodeughi@gmail.com",
   "asdlkjsadlks@gmail.com",
-  "",
 ];
 var mailFound = false;
 var msgResult = "";
@@ -21,7 +20,6 @@ console.log(mailList.length);
 
 for (var i = 0; i < mailList.length; i++) {
   if (yourMail === mailList[i]) {
-    console.log(mailList[i]);
     mailFound = true;
   }
 }
@@ -35,3 +33,9 @@ if (mailFound) {
 }
 
 console.log(msgResult);
+
+//output in HTML
+
+document.getElementById("your-mail").innerHTML =
+  "Il tuo indirizzo e-mail: " + yourMail;
+document.getElementById("result").innerHTML = msgResult;

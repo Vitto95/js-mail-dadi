@@ -9,6 +9,7 @@ var mailList = [
   "andreabianchi32@gmail.com",
   "ugodeughi@gmail.com",
   "asdlkjsadlks@gmail.com",
+  "email-prova@gmail.com",
 ];
 var mailFound = false;
 var msgResult = "";

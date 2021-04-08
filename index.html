@@ -6,43 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mail e Dadi</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /google fonts -->
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- /font-awesome -->
   </head>
+
   <body>
-    <!-- mail -->
-    <div id="wrapper-mail">
-      <h1>Accesso alla tua mail</h1>
+    <div class="wrapper">
+      <!-- mail -->
+      <div id="wrapper-mail">
+        <div class="title">
+          <h1>Accesso alla tua mail</h1>
+          <span><i class="far fa-envelope fa-2x"></i></span>
+        </div>
 
-      <p id="your-mail"></p>
+        <div class="content-mail">
+          <p id="your-mail"></p>
 
-      <p id="result"></p>
+          <p id="result"></p>
+        </div>
+      </div>
+      <!-- /mail -->
+
+      <!-- dadi -->
+      <div id="wrapper-dice">
+        <div class="title">
+          <h1>Gioco Dadi</h1>
+          <i class="fas fa-dice fa-2x"></i>
+        </div>
+
+        <!-- Metodo 1  -->
+
+        <h2>Metodo 1</h2>
+
+        <p id="your-number"></p>
+
+        <p id="pc-number"></p>
+
+        <p id="winner"></p>
+
+        <!-- /Metodo 1  -->
+
+        <!-- Metodo 2  -->
+
+        <h2>Metodo 2</h2>
+
+        <p id="your-number-2"></p>
+
+        <p id="pc-number-2"></p>
+
+        <p id="winner-2"></p>
+
+        <!-- /Metodo 2 -->
+      </div>
+      <!-- /dadi -->
     </div>
-    <!-- /mail -->
-
-    <!-- dadi -->
-    <div id="wrapper-dice">
-      <h1>Gioco Dadi</h1>
-
-      <!-- Metodo 1  -->
-
-      <p id="your-number"></p>
-
-      <p id="pc-number"></p>
-
-      <p id="winner"></p>
-
-      <!-- /Metodo 1  -->
-
-      <!-- Metodo 2  -->
-
-      <p id="your-number-2"></p>
-
-      <p id="pc-number-2"></p>
-
-      <p id="winner-2"></p>
-
-      <!-- /Metodo 2 -->
-    </div>
-    <!-- /dadi -->
 
     <script src="js/script-mail.js"></script>
     <script src="js/script-dadi.js"></script>
